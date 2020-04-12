@@ -1,14 +1,24 @@
 import { Component } from '@angular/core';
 
+import { NgForm } from '@angular/forms';
+import { PostService } from '../post.service';
+
 @Component({
   selector: 'app-add-post',
-  templateUrl: './add-post.component.html'
+  templateUrl: './add-post.component.html',
+  styleUrls: ['./add-post.component.css'],
 })
 export class AddPostComponent {
-  enteredValue = '';
-  newPost = '';
+  enteredTitle = "";
+  enteredContent = "";
 
-  onAddPost(postInput: HTMLTextAreaElement) {
-    this.newPost = this.enteredValue
+  constructor(public postService: PostService) {}
+
+  onAddPost(form: NgForm) {
+    if (form.invalid) {
+      return;
+    }
+    this.postService.addPost(form.value.title, form.value.content);
+    form.resetForm();
   }
 }

@@ -19,7 +19,7 @@ const storage = multer.diskStorage({
     if (isValid) {
       error = null;
     }
-    cb(error, "backend/images");
+    cb(error, "server/images");
   },
   filename: (req, file, cb) => {
     const name = file.originalname
@@ -88,7 +88,7 @@ router.get("", (req, res, next) => {
   postQuery
     .then(documents => {
       fetchedPosts = documents;
-      return Post.count();
+      return Post.countDocuments();
     })
     .then(count => {
       res.status(200).json({

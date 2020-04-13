@@ -1,0 +1,12 @@
+ul {
+  list-style: none;
+}
+
+.spacer {
+  flex: 1 1 auto
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}

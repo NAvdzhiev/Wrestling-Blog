@@ -8,11 +8,13 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 import { AppComponent } from './app.component';
 import { AddPostComponent } from './post/add-post/add-post.component';
 import { HeaderComponent } from './header/header.component';
 import { PostListComponent } from './post/post-list/post-list.component';
+import { AppRoutingModule } from './app-routing.module';
 
 
 @NgModule({
@@ -24,6 +26,7 @@ import { PostListComponent } from './post/post-list/post-list.component';
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
@@ -31,7 +34,8 @@ import { PostListComponent } from './post/post-list/post-list.component';
     MatCardModule,
     MatButtonModule,
     MatToolbarModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatProgressSpinnerModule
   ],
   providers: [
   ],

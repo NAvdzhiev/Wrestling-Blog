@@ -4,9 +4,9 @@ ul {
   margin: 0;
 }
 
-a {
+a, button {
   text-decoration: none;
-  color: white;
+  color: #fff;
 }
 
 ul {
@@ -15,4 +15,9 @@ ul {
 
 .spacer {
   flex: 1 1 auto;
+}
+
+mat-toolbar {
+  background: #272525;
+  border-bottom: 3px solid #00c2c2;
 }

@@ -23,3 +23,57 @@ mat-paginator {
   width: 100%;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
+
+mat-paginator {
+  text-align: center;
+  display: block ruby;
+  background: none;
+  color: white;
+  font-size: 18px;
+  margin-top: 2rem;
+}
+
+.mat-paginator-icon {
+  fill: white !important;
+}
+
+.mat-select-value-text {
+  color: white;
+}
+
+mat-card {
+  margin-top: 3rem;
+  max-width: 300px;
+  background-color: #4a4a48;
+  color: white;
+  text-align: center;
+}
+
+a {
+  color: #00c2c2;
+}
+
+::ng-deep .mat-paginator-icon {
+  fill: white !important;
+}
+
+::ng-deep .mat-select-value-text {
+  color: white;
+}
+
+::ng-deep .mat-select-panel-wrap > div {
+  background-color: #4a4a48;
+  color: white !important;
+}
+
+::ng-deep .mat-option, ::ng-deep .mat-option.mat-active {
+  color: white !important;
+}
+
+::ng-deep .mat-select-arrow {
+  color: white;
+}
+
+::ng-deep .mat-form-field.mat-focused  ::ng-deep.mat-form-field-ripple {
+  color: #00c2c2;
+}

@@ -5,3 +5,35 @@ mat-form-field {
 mat-spinner {
   margin: auto;
 }
+
+mat-card {
+  margin-top: 5rem;
+  background-color: #4a4a48;
+}
+
+::ng-deep .mat-form-field-appearance-legacy .mat-form-field-underline {
+  background-color: white !important;
+}
+
+::ng-deep .mat-form-field-label {
+  color: white !important;
+}
+
+::ng-deep input.mat-input-element {
+  color: white;
+}
+
+button {
+  background-color: #00c2c2;
+  color: white;
+}
+
+/* Change label color on focused */
+::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
+  color: #00c2c2 !important;
+}
+
+/* underline border color on focused */
+::ng-deep .mat-focused .mat-form-field-underline .mat-form-field-ripple{
+  background-color: #00c2c2 !important;
+}

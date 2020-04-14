@@ -11,6 +11,32 @@ input[type="file"] {
   visibility: hidden;
 }
 
+::ng-deep .mat-form-field-appearance-legacy .mat-form-field-underline {
+  background-color: white !important;
+}
+
+::ng-deep .mat-form-field-label {
+  color: white !important;
+}
+
+::ng-deep input.mat-input-element {
+  color: white;
+}
+
+button {
+  background-color: #00c2c2;
+  color: white;
+}
+
+/* Change label color on focused */
+::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
+  color: #00c2c2 !important;
+}
+
+/* underline border color on focused */
+::ng-deep .mat-focused .mat-form-field-underline .mat-form-field-ripple{
+  background-color: #00c2c2 !important;
+}
 .image-preview {
   height: 5rem;
   margin: 1rem 0;
@@ -18,4 +44,10 @@ input[type="file"] {
 
 .image-preview img {
   height: 100%;
+}
+
+mat-card {
+  margin-top: 5rem;
+  color: #fff;
+  background: #4a4a48;
 }
